@@ -222,3 +222,4 @@ with open('inexpensive_loans.csv', mode='w') as loans_file:
     loans_writer.writerow(header)
     for loan in inexpensive_loans:
         loans_writer.writerow([loan.get("loan_price"), loan.get("remaining_months"), loan.get("repayment_interval"), loan.get("future_value")])
+
